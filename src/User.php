@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+
 /**
  * Class User
  * @package App
@@ -8,12 +9,14 @@ namespace App;
 class User
 {
     /**
-     * @var int
+     * Number of class objects created
+     * @var int $count
      */
     private static int $count = 0;
 
     /**
-     * @var string
+     * Class object name value
+     * @var string $name
      */
     public string $name;
 

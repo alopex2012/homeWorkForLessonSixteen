@@ -13,7 +13,8 @@ class Circle
     const PI = 3.1415926535;
 
     /**
-     * @var int
+     * The radius value of the class object
+     * @var int $radius
      */
     private int $radius;
 
