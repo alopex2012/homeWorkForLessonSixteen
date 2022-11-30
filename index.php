@@ -32,6 +32,7 @@ use App\User, App\Circle;
 echo "<pre>",
 "
     1.	Не підглядаючи в мій код, реалізуйте такий же клас User, який підраховує кількість своїх об'єктів.
+    2.	Самостійно переробте код вашого класу User відповідно до теоретичної частини уроку.
 ",
 "</pre>";
 
@@ -40,19 +41,11 @@ $user1 = new User("First");
 $user2 = new User("Second");
 $user3 = new User("Third");
 $user4 = new User("Four");
+//create an array of created objects
 $arr = [$user1, $user2, $user3, $user4];
 print_r($arr);
 echo "<br />";
-echo "Number of objects created = ".User::getCount();
-
-echo "<hr />";
-echo "<pre>",
-"
-    2.	Самостійно переробте код вашого класу User відповідно до теоретичної частини уроку.
-",
-"</pre>";
-
-//create an instance of the class User
+echo "Number of objects created = " . User::getCount();
 
 echo "<hr />";
 
@@ -64,10 +57,9 @@ echo "<pre>",
 "</pre>";
 
 //create an instance of the class Circle
-$circle =  new Circle(10);
-echo "Circle area = ".$circle->getSquare()."<br />";
-echo "Circumference = ".$circle->getCircuit();
-
+$circle = new Circle(10);
+echo "Circle area = " . $circle->getSquare() . "<br />";
+echo "Circumference = " . $circle->getCircuit();
 
 echo "<hr />";
 ?>
