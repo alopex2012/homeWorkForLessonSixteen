@@ -36,6 +36,14 @@ echo "<pre>",
 "</pre>";
 
 //create an instance of the class User
+$user1 = new User("First");
+$user2 = new User("Second");
+$user3 = new User("Third");
+$user4 = new User("Four");
+$arr = [$user1, $user2, $user3, $user4];
+print_r($arr);
+echo "<br />";
+echo "Number of objects created = ".User::getCount();
 
 echo "<hr />";
 echo "<pre>",
@@ -56,6 +64,9 @@ echo "<pre>",
 "</pre>";
 
 //create an instance of the class Circle
+$circle =  new Circle(10);
+echo "Circle area = ".$circle->getSquare()."<br />";
+echo "Circumference = ".$circle->getCircuit();
 
 
 echo "<hr />";
